@@ -715,55 +715,54 @@
             </ul>
         </div>
     </details>
-
     <!DOCTYPE html>
     <html lang="en">
-
+    
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Waktu dan Hitung Mundur</title>
+        <title>Time and Countdown</title>
         <style>
             .bg-white {
                 background-color: white;
             }
-
+    
             .rounded-lg {
                 border-radius: 8px;
             }
-
+    
             .shadow-md {
                 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             }
-
+    
             .p-6 {
                 padding: 1.5rem;
             }
-
+    
             .mb-6 {
                 margin-bottom: 1.5rem;
             }
-
+    
             .text-2xl {
                 font-size: 1.5rem;
             }
-
+    
             .font-bold {
                 font-weight: bold;
             }
-
+    
             .text-blue-600 {
                 color: #1d4ed8;
             }
-
+    
             .cursor-pointer {
                 cursor: pointer;
             }
-
+    
             .border {
                 border: 1px solid #ccc;
             }
-
+    
             .calc-button {
                 background-color: #4a90e2;
                 color: white;
@@ -773,15 +772,15 @@
                 cursor: pointer;
                 margin: 5px 0;
             }
-
+    
             .clear-button {
                 background-color: #e94e77;
             }
-
+    
             .calc-button:hover {
                 opacity: 0.9;
             }
-
+    
             .countdown {
                 font-size: 1.25rem;
                 color: #ff5733;
@@ -789,341 +788,326 @@
             }
         </style>
     </head>
-
+    
     <body>
         <details>
-            <summary>Waktu</summary>
+            <summary>Time</summary>
             <div class="bg-white rounded-lg shadow-md p-6 mb-6">
-                <h2 class="text-2xl font-bold mb-4 text-blue-600 cursor-pointer">Waktu</h2>
+                <h2 class="text-2xl font-bold mb-4 text-blue-600 cursor-pointer">Time</h2>
                 <ul class="list-disc pl-6">
-                    <li id="waktuReal">Waktu Sekarang (Bogor): </li>
-                    <li id="waktuNorwegia">Waktu Norwegia: </li>
-                    <li id="waktuSwiss">Waktu Swiss: </li>
-                    <li id="waktuSwedia">Waktu Swedia: </li>
-                    <li id="waktuKanada">Waktu Kanada: </li>
-                    <li id="waktuFinlandia">Waktu Finlandia: </li>
-                    <li id="waktuDenmark">Waktu Denmark: </li>
-                    <li id="waktuAustralia">Waktu Australia: </li>
-                    <li id="waktuBelanda">Waktu Belanda: </li>
-                    <li id="waktuJerman">Waktu Jerman: </li>
-                    <li id="waktuIslandia">Waktu Islandia: </li>
-                    <li id="waktuSingapura">Waktu Singapura: </li>
-                    <li id="waktuMalaysia">Waktu Malaysia: </li>
-                    <li id="waktuThailand">Waktu Thailand: </li>
-                    <li id="waktuFilipina">Waktu Filipina: </li>
-                    <li id="waktuVietnam">Waktu Vietnam: </li>
-                    <li id="waktuBrunei">Waktu Brunei: </li>
-                    <li id="waktuKamboja">Waktu Kamboja: </li>
-                    <li id="waktuLaos">Waktu Laos: </li>
-                    <li id="waktuMyanmar">Waktu Myanmar: </li>
-                    <li id="waktuIndonesia">Waktu Indonesia: </li>
-                    <li id="waktuJepang">Waktu Jepang: </li>
-                    <li id="waktuRusia">Waktu Rusia: </li>
-                    <li id="waktuKoreaSelatan">Waktu Korea Selatan: </li>
-                    <li id="waktuKoreaUtara">Waktu Korea Utara: </li>
-                    <li id="waktuChina">Waktu China: </li>
-                    <li id="waktuArabSaudi">Waktu Arab Saudi: </li>
-                    <li id="waktuUAE">Waktu Uni Emirat Arab: </li>
-                    <li id="waktuQatar">Waktu Qatar: </li>
-                    <li id="waktuKuwait">Waktu Kuwait: </li>
-                    <li id="waktuOman">Waktu Oman: </li>
-                    <li id="countdown" class="countdown">Hitung Mundur: </li>
+                    <li id="waktuReal">Current Time (Bogor): </li>
+                    <li id="waktuNorwegia">Norway Time: </li>
+                    <li id="waktuSwiss">Switzerland Time: </li>
+                    <li id="waktuSwedia">Sweden Time: </li>
+                    <li id="waktuKanada">Canada Time: </li>
+                    <li id="waktuFinlandia">Finland Time: </li>
+                    <li id="waktuDenmark">Denmark Time: </li>
+                    <li id="waktuAustralia">Australia Time: </li>
+                    <li id="waktuBelanda">Netherlands Time: </li>
+                    <li id="waktuJerman">Germany Time: </li>
+                    <li id="waktuIslandia">Iceland Time: </li>
+                    <li id="waktuSingapura">Singapore Time: </li>
+                    <li id="waktuMalaysia">Malaysia Time: </li>
+                    <li id="waktuThailand">Thailand Time: </li>
+                    <li id="waktuFilipina">Philippines Time: </li>
+                    <li id="waktuVietnam">Vietnam Time: </li>
+                    <li id="waktuBrunei">Brunei Time: </li>
+                    <li id="waktuKamboja">Cambodia Time: </li>
+                    <li id="waktuLaos">Laos Time: </li>
+                    <li id="waktuMyanmar">Myanmar Time: </li>
+                    <li id="waktuIndonesia">Indonesia Time: </li>
+                    <li id="waktuJepang">Japan Time: </li>
+                    <li id="waktuRusia">Russia Time: </li>
+                    <li id="waktuKoreaSelatan">South Korea Time: </li>
+                    <li id="waktuKoreaUtara">North Korea Time: </li>
+                    <li id="waktuChina">China Time: </li>
+                    <li id="waktuArabSaudi">Saudi Arabia Time: </li>
+                    <li id="waktuUAE">UAE Time: </li>
+                    <li id="waktuQatar">Qatar Time: </li>
+                    <li id="waktuKuwait">Kuwait Time: </li>
+                    <li id="waktuOman">Oman Time: </li>
+                    <li id="countdown" class="countdown">Countdown: </li>
                 </ul>
             </div>
         </details>
-
+    
         <script>
             // Update current time for each country
             function updateTime() {
                 const now = new Date();
                 const options = { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false };
-
+    
                 // Jakarta Time
-                document.getElementById('waktuReal').innerText = `Waktu Sekarang (Bogor): ${now.toLocaleTimeString('id-ID', { ...options, timeZone: 'Asia/Jakarta' })}`;
-
+                document.getElementById('waktuReal').innerText = `Current Time (Bogor): ${now.toLocaleTimeString('id-ID', { ...options, timeZone: 'Asia/Jakarta' })}`;
+    
                 // Norway Time
-                document.getElementById('waktuNorwegia').innerText = `Waktu Norwegia: ${now.toLocaleTimeString('en-GB', { ...options, timeZone: 'Europe/Oslo' })}`;
-
+                document.getElementById('waktuNorwegia').innerText = `Norway Time: ${now.toLocaleTimeString('en-GB', { ...options, timeZone: 'Europe/Oslo' })}`;
+    
                 // Switzerland Time
-                document.getElementById('waktuSwiss').innerText = `Waktu Swiss: ${now.toLocaleTimeString('en-GB', { ...options, timeZone: 'Europe/Zurich' })}`;
-
+                document.getElementById('waktuSwiss').innerText = `Switzerland Time: ${now.toLocaleTimeString('en-GB', { ...options, timeZone: 'Europe/Zurich' })}`;
+    
                 // Sweden Time
-                document.getElementById('waktuSwedia').innerText = `Waktu Swedia: ${now.toLocaleTimeString('sv-SE', { ...options, timeZone: 'Europe/Stockholm' })}`;
-
+                document.getElementById('waktuSwedia').innerText = `Sweden Time: ${now.toLocaleTimeString('sv-SE', { ...options, timeZone: 'Europe/Stockholm' })}`;
+    
                 // Canada Time (Toronto)
-                document.getElementById('waktuKanada').innerText = `Waktu Kanada: ${now.toLocaleTimeString('en-CA', { ...options, timeZone: 'America/Toronto' })}`;
-
+                document.getElementById('waktuKanada').innerText = `Canada Time: ${now.toLocaleTimeString('en-CA', { ...options, timeZone: 'America/Toronto' })}`;
+    
                 // Finland Time
-                document.getElementById('waktuFinlandia').innerText = `Waktu Finlandia: ${now.toLocaleTimeString('fi-FI', { ...options, timeZone: 'Europe/Helsinki' })}`;
-
+                document.getElementById('waktuFinlandia').innerText = `Finland Time: ${now.toLocaleTimeString('fi-FI', { ...options, timeZone: 'Europe/Helsinki' })}`;
+    
                 // Denmark Time
-                document.getElementById('waktuDenmark').innerText = `Waktu Denmark: ${now.toLocaleTimeString('da-DK', { ...options, timeZone: 'Europe/Copenhagen' })}`;
-
+                document.getElementById('waktuDenmark').innerText = `Denmark Time: ${now.toLocaleTimeString('da-DK', { ...options, timeZone: 'Europe/Copenhagen' })}`;
+    
                 // Australia Time (Sydney)
-                document.getElementById('waktuAustralia').innerText = `Waktu Australia: ${now.toLocaleTimeString('en-AU', { ...options, timeZone: 'Australia/Sydney' })}`;
-
+                document.getElementById('waktuAustralia').innerText = `Australia Time: ${now.toLocaleTimeString('en-AU', { ...options, timeZone: 'Australia/Sydney' })}`;
+    
                 // Netherlands Time
-                document.getElementById('waktuBelanda').innerText = `Waktu Belanda: ${now.toLocaleTimeString('nl-NL', { ...options, timeZone: 'Europe/Amsterdam' })}`;
-
+                document.getElementById('waktuBelanda').innerText = `Netherlands Time: ${now.toLocaleTimeString('nl-NL', { ...options, timeZone: 'Europe/Amsterdam' })}`;
+    
                 // Germany Time
-                document.getElementById('waktuJerman').innerText = `Waktu Jerman: ${now.toLocaleTimeString('de-DE', { ...options, timeZone: 'Europe/Berlin' })}`;
-
+                document.getElementById('waktuJerman').innerText = `Germany Time: ${now.toLocaleTimeString('de-DE', { ...options, timeZone: 'Europe/Berlin' })}`;
+    
                 // Iceland Time
-                document.getElementById('waktuIslandia').innerText = `Waktu Islandia: ${now.toLocaleTimeString('is-IS', { ...options, timeZone: 'Atlantic/Reykjavik' })}`;
-
+                document.getElementById('waktuIslandia').innerText = `Iceland Time: ${now.toLocaleTimeString('is-IS', { ...options, timeZone: 'Atlantic/Reykjavik' })}`;
+    
                 // ASEAN countries
-                document.getElementById('waktuSingapura').innerText = `Waktu Singapura: ${now.toLocaleTimeString('en-SG', { ...options, timeZone: 'Asia/Singapore' })}`;
-                document.getElementById('waktuMalaysia').innerText = `Waktu Malaysia: ${now.toLocaleTimeString('ms-MY', { ...options, timeZone: 'Asia/Kuala_Lumpur' })}`;
-                document.getElementById('waktuThailand').innerText = `Waktu Thailand: ${now.toLocaleTimeString('th-TH', { ...options, timeZone: 'Asia/Bangkok' })}`;
-                document.getElementById('waktuFilipina').innerText = `Waktu Filipina: ${now.toLocaleTimeString('en-PH', { ...options, timeZone: 'Asia/Manila' })}`;
-                document.getElementById('waktuVietnam').innerText = `Waktu Vietnam: ${now.toLocaleTimeString('vi-VN', { ...options, timeZone: 'Asia/Ho_Chi_Minh' })}`;
-                document.getElementById('waktuBrunei').innerText = `Waktu Brunei: ${now.toLocaleTimeString('ms-BN', { ...options, timeZone: 'Asia/Brunei' })}`;
-                document.getElementById('waktuKamboja').innerText = `Waktu Kamboja: ${now.toLocaleTimeString('km-KH', { ...options, timeZone: 'Asia/Phnom_Penh' })}`;
-                document.getElementById('waktuLaos').innerText = `Waktu Laos: ${now.toLocaleTimeString('lo-LA', { ...options, timeZone: 'Asia/Vientiane' })}`;
-                document.getElementById('waktuMyanmar').innerText = `Waktu Myanmar: ${now.toLocaleTimeString('my-MM', { ...options, timeZone: 'Asia/Yangon' })}`;
-                document.getElementById('waktuIndonesia').innerText = `Waktu Indonesia: ${now.toLocaleTimeString('id-ID', { ...options, timeZone: 'Asia/Jakarta' })}`;
-                document.getElementById('waktuJepang').innerText = `Waktu Jepang: ${now.toLocaleTimeString('ja-JP', { ...options, timeZone: 'Asia/Tokyo' })}`;
-
+                document.getElementById('waktuSingapura').innerText = `Singapore Time: ${now.toLocaleTimeString('en-SG', { ...options, timeZone: 'Asia/Singapore' })}`;
+                document.getElementById('waktuMalaysia').innerText = `Malaysia Time: ${now.toLocaleTimeString('ms-MY', { ...options, timeZone: 'Asia/Kuala_Lumpur' })}`;
+                document.getElementById('waktuThailand').innerText = `Thailand Time: ${now.toLocaleTimeString('th-TH', { ...options, timeZone: 'Asia/Bangkok' })}`;
+                document.getElementById('waktuFilipina').innerText = `Philippines Time: ${now.toLocaleTimeString('en-PH', { ...options, timeZone: 'Asia/Manila' })}`;
+                document.getElementById('waktuVietnam').innerText = `Vietnam Time: ${now.toLocaleTimeString('vi-VN', { ...options, timeZone: 'Asia/Ho_Chi_Minh' })}`;
+                document.getElementById('waktuBrunei').innerText = `Brunei Time: ${now.toLocaleTimeString('ms-BN', { ...options, timeZone: 'Asia/Brunei' })}`;
+                document.getElementById('waktuKamboja').innerText = `Cambodia Time: ${now.toLocaleTimeString('km-KH', { ...options, timeZone: 'Asia/Phnom_Penh' })}`;
+                document.getElementById('waktuLaos').innerText = `Laos Time: ${now.toLocaleTimeString('lo-LA', { ...options, timeZone: 'Asia/Vientiane' })}`;
+                document.getElementById('waktuMyanmar').innerText = `Myanmar Time: ${now.toLocaleTimeString('my-MM', { ...options, timeZone: 'Asia/Yangon' })}`;
+                document.getElementById('waktuIndonesia').innerText = `Indonesia Time: ${now.toLocaleTimeString('id-ID', { ...options, timeZone: 'Asia/Jakarta' })}`;
+    
+                // Japan Time
+                document.getElementById('waktuJepang').innerText = `Japan Time: ${now.toLocaleTimeString('ja-JP', { ...options, timeZone: 'Asia/Tokyo' })}`;
+    
                 // Russia Time
-                document.getElementById('waktuRusia').innerText = `Waktu Rusia: ${now.toLocaleTimeString('ru-RU', { ...options, timeZone: 'Europe/Moscow' })}`;
-
+                document.getElementById('waktuRusia').innerText = `Russia Time: ${now.toLocaleTimeString('ru-RU', { ...options, timeZone: 'Europe/Moscow' })}`;
+    
                 // South Korea Time
-                document.getElementById('waktuKoreaSelatan').innerText = `Waktu Korea Selatan: ${now.toLocaleTimeString('ko-KR', { ...options, timeZone: 'Asia/Seoul' })}`;
-
+                document.getElementById('waktuKoreaSelatan').innerText = `South Korea Time: ${now.toLocaleTimeString('ko-KR', { ...options, timeZone: 'Asia/Seoul' })}`;
+    
                 // North Korea Time
-                document.getElementById('waktuKoreaUtara').innerText = `Waktu Korea Utara: ${now.toLocaleTimeString('ko-KP', { ...options, timeZone: 'Asia/Pyongyang' })}`;
-
+                document.getElementById('waktuKoreaUtara').innerText = `North Korea Time: ${now.toLocaleTimeString('ko-KP', { ...options, timeZone: 'Asia/Pyongyang' })}`;
+    
                 // China Time
-                document.getElementById('waktuChina').innerText = `Waktu China: ${now.toLocaleTimeString('zh-CN', { ...options, timeZone: 'Asia/Shanghai' })}`;
-
+                document.getElementById('waktuChina').innerText = `China Time: ${now.toLocaleTimeString('zh-CN', { ...options, timeZone: 'Asia/Shanghai' })}`;
+    
                 // Saudi Arabia Time
-                document.getElementById('waktuArabSaudi').innerText = `Waktu Arab Saudi: ${now.toLocaleTimeString('ar-SA', { ...options, timeZone: 'Asia/Riyadh' })}`;
-
+                document.getElementById('waktuArabSaudi').innerText = `Saudi Arabia Time: ${now.toLocaleTimeString('ar-SA', { ...options, timeZone: 'Asia/Riyadh' })}`;
+    
                 // UAE Time
-                document.getElementById('waktuUAE').innerText = `Waktu Uni Emirat Arab: ${now.toLocaleTimeString('ar-AE', { ...options, timeZone: 'Asia/Dubai' })}`;
-
+                document.getElementById('waktuUAE').innerText = `UAE Time: ${now.toLocaleTimeString('en-AE', { ...options, timeZone: 'Asia/Dubai' })}`;
+    
                 // Qatar Time
-                document.getElementById('waktuQatar').innerText = `Waktu Qatar: ${now.toLocaleTimeString('ar-QA', { ...options, timeZone: 'Asia/Qatar' })}`;
-
+                document.getElementById('waktuQatar').innerText = `Qatar Time: ${now.toLocaleTimeString('en-QA', { ...options, timeZone: 'Asia/Qatar' })}`;
+    
                 // Kuwait Time
-                document.getElementById('waktuKuwait').innerText = `Waktu Kuwait: ${now.toLocaleTimeString('ar-KW', { ...options, timeZone: 'Asia/Kuwait' })}`;
-
+                document.getElementById('waktuKuwait').innerText = `Kuwait Time: ${now.toLocaleTimeString('ar-KW', { ...options, timeZone: 'Asia/Kuwait' })}`;
+    
                 // Oman Time
-                document.getElementById('waktuOman').innerText = `Waktu Oman: ${now.toLocaleTimeString('ar-OM', { ...options, timeZone: 'Asia/Muscat' })}`;
-
-                // Countdown timer (adjusted for time interval of 5 minutes)
-                const countdownDate = new Date();
-                countdownDate.setMinutes(countdownDate.getMinutes() + 5);
-                const countdownInterval = setInterval(function () {
-                    const now = new Date().getTime();
-                    const distance = countdownDate - now;
-                    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-                    document.getElementById('countdown').innerHTML = `Hitung Mundur: ${minutes}m ${seconds}s`;
-                    if (distance < 0) {
-                        clearInterval(countdownInterval);
-                        document.getElementById('countdown').innerHTML = 'Selesai!';
-                    }
-                }, 1000);
+                document.getElementById('waktuOman').innerText = `Oman Time: ${now.toLocaleTimeString('ar-OM', { ...options, timeZone: 'Asia/Muscat' })}`;
             }
-
-            // Call the function to update the time every second
-            setInterval(updateTime, 1000);
-            updateTime();  // Initial call to show time immediately
+    
+            setInterval(updateTime, 1000); // Update every second
         </script>
     </body>
-
+    
     </html>
+    
 
     <!DOCTYPE html>
-    <html lang="en">
+<html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Dokumentasi Gambar</title>
-        <!-- FontAwesome CDN for social media icons -->
-        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-        <style>
-            /* General Styles */
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Documentation</title>
+    <!-- FontAwesome CDN for social media icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-            /* Gallery Grid Layout */
-            .gallery {
-                display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-                gap: 10px;
-            }
+        /* Gallery Grid Layout */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 10px;
+        }
 
-            .gallery-item {
-                position: relative;
-                overflow: hidden;
-                cursor: pointer;
-                transition: transform 0.3s ease, filter 0.3s ease;
-            }
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
 
-            .gallery-image {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                transition: transform 0.3s ease, filter 0.3s ease;
-            }
+        .gallery-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
 
-            .gallery-item:hover .gallery-image {
-                transform: scale(1.1);
-                filter: brightness(0.8);
-            }
+        .gallery-item:hover .gallery-image {
+            transform: scale(1.1);
+            filter: brightness(0.8);
+        }
 
-            /* Modal Styles */
-            .modal {
-                display: none;
-                position: fixed;
-                z-index: 1000;
-                left: 0;
-                top: 0;
-                width: 100%;
-                height: 100%;
-                background-color: rgba(0, 0, 0, 0.8);
-                justify-content: center;
-                align-items: center;
-            }
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
 
-            .modal-img {
-                max-width: 90%;
-                max-height: 90%;
-                object-fit: contain;
-            }
+        .modal-img {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+        }
 
-            .close {
-                position: absolute;
-                top: 20px;
-                right: 20px;
-                font-size: 30px;
-                color: white;
-                cursor: pointer;
-            }
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+        }
 
-            /* Modal active state */
-            .modal.active {
-                display: flex;
-            }
-        </style>
-    </head>
+        /* Modal active state */
+        .modal.active {
+            display: flex;
+        }
+    </style>
+</head>
 
-    <body>
-        <details close>
-            <summary>Dokumentasi Gambar</summary>
-            <div class="bg-white rounded-lg shadow-md p-6 mb-6" id="documentation">
-                <h2 class="text-2xl font-bold mb-4 text-blue-600 cursor-pointer">Dokumentasi Gambar</h2>
-                <p>Beberapa gambar dokumentasi.</p>
+<body>
+    <details close>
+        <summary>Image Documentation</summary>
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6" id="documentation">
+            <h2 class="text-2xl font-bold mb-4 text-blue-600 cursor-pointer">Image Documentation</h2>
+            <p>Some documentation images.</p>
 
-                <!-- Gallery Grid with images -->
-                <div class="gallery">
-                    <div class="gallery-item">
-                        <img src="1.png" alt="Gambar 1" class="gallery-image">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="2.png" alt="Gambar 2" class="gallery-image">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="3.png" alt="Gambar 3" class="gallery-image">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="4.png" alt="Gambar 4" class="gallery-image">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="5.png" alt="Gambar 5" class="gallery-image">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="6.png" alt="Gambar 6" class="gallery-image">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="7.png" alt="Gambar 7" class="gallery-image">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="8.png" alt="Gambar 8" class="gallery-image">
-                    </div>
+            <!-- Gallery Grid with images -->
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="1.png" alt="Image 1" class="gallery-image">
                 </div>
-
-                <!-- Modal to show full-size image -->
-                <div id="modal" class="modal">
-                    <span id="close-modal" class="close">&times;</span>
-                    <img id="modal-img" class="modal-img" src="" alt="Full Image">
+                <div class="gallery-item">
+                    <img src="2.png" alt="Image 2" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="3.png" alt="Image 3" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="4.png" alt="Image 4" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="5.png" alt="Image 5" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="6.png" alt="Image 6" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="7.png" alt="Image 7" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="8.png" alt="Image 8" class="gallery-image">
                 </div>
             </div>
-        </details>
 
-        <!-- Footer Section -->
-        <footer class="text-center py-4 mt-6">
-            <div class="container mx-auto">
-                <!-- Copyright Text -->
-                <p class="text-base font-medium hover:text-darkblue-300 transition-colors duration-300">
-                    <a href="https://peraturan.bpk.go.id/Details/38690" class="text-black-400 hover:underline"
-                        target="_blank">
-                        © 2024 8.3 - Semua Hak Dilindungi
-                    </a>
-                </p>
-
-                <!-- Social Media Icons -->
-                <div class="flex justify-center space-x-6 mt-4">
-                    <!-- YouTube Icon -->
-                    <a href="https://youtube.com/@smppgriciteureup6665?si=_52tGtrsvUAyaBsY" target="_blank"
-                        class="text-gray-500 hover:text-red-600 transition-colors duration-300">
-                        <i class="fab fa-youtube text-2xl"></i>
-                    </a>
-
-                    <!-- Instagram Icon -->
-                    <a href="https://www.instagram.com/smppgriciteureup?igsh=MXRwcWdmdXd2NTV5cQ==" target="_blank"
-                        class="text-gray-500 hover:text-pink-600 transition-colors duration-300">
-                        <i class="fab fa-instagram text-2xl"></i>
-                    </a>
-
-                    <!-- Google Maps Icon -->
-                    <a href="https://g.co/kgs/KS9YTyu" target="_blank"
-                        class="text-gray-500 hover:text-blue-600 transition-colors duration-300">
-                        <i class="fas fa-map-marker-alt text-2xl"></i>
-                    </a>
-                </div>
-
-                <!-- Additional Support Text -->
-                <p class="text-sm text-gray-500 mt-4">
-                    Support with Windows 11 and Axioo laptop
-                </p>
+            <!-- Modal to show full-size image -->
+            <div id="modal" class="modal">
+                <span id="close-modal" class="close">&times;</span>
+                <img id="modal-img" class="modal-img" src="" alt="Full Image">
             </div>
-        </footer>
+        </div>
+    </details>
 
-        <!-- JavaScript for Modal Functionality -->
-        <script>
-            const galleryItems = document.querySelectorAll('.gallery-item');
-            const modal = document.getElementById('modal');
-            const modalImg = document.getElementById('modal-img');
-            const closeModal = document.getElementById('close-modal');
+    <!-- Footer Section -->
+    <footer class="text-center py-4 mt-6">
+        <div class="container mx-auto">
+            <!-- Copyright Text -->
+            <p class="text-base font-medium hover:text-darkblue-300 transition-colors duration-300">
+                <a href="https://peraturan.bpk.go.id/Details/38690" class="text-black-400 hover:underline" target="_blank">
+                    © 2024 8.3 - All Rights Reserved
+                </a>
+            </p>
 
-            // Open the image in modal when clicked
-            galleryItems.forEach(item => {
-                item.addEventListener('click', function () {
-                    const imgSrc = item.querySelector('img').src; // Get the src of clicked image
-                    modalImg.src = imgSrc; // Set the modal image source
-                    modal.classList.add('active'); // Show the modal
-                });
+            <!-- Social Media Icons -->
+            <div class="flex justify-center space-x-6 mt-4">
+                <!-- YouTube Icon -->
+                <a href="https://youtube.com/@smppgriciteureup6665?si=_52tGtrsvUAyaBsY" target="_blank"
+                    class="text-gray-500 hover:text-red-600 transition-colors duration-300">
+                    <i class="fab fa-youtube text-2xl"></i>
+                </a>
+
+                <!-- Instagram Icon -->
+                <a href="https://www.instagram.com/smppgriciteureup?igsh=MXRwcWdmdXd2NTV5cQ==" target="_blank"
+                    class="text-gray-500 hover:text-pink-600 transition-colors duration-300">
+                    <i class="fab fa-instagram text-2xl"></i>
+                </a>
+
+                <!-- Google Maps Icon -->
+                <a href="https://g.co/kgs/KS9YTyu" target="_blank"
+                    class="text-gray-500 hover:text-blue-600 transition-colors duration-300">
+                    <i class="fas fa-map-marker-alt text-2xl"></i>
+                </a>
+            </div>
+
+            <!-- Additional Support Text -->
+            <p class="text-sm text-gray-500 mt-4">
+                Support with Windows 11 and Axioo laptop
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Modal Functionality -->
+    <script>
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        const modal = document.getElementById('modal');
+        const modalImg = document.getElementById('modal-img');
+        const closeModal = document.getElementById('close-modal');
+
+        // Open the image in modal when clicked
+        galleryItems.forEach(item => {
+            item.addEventListener('click', function () {
+                const imgSrc = item.querySelector('img').src; // Get the src of clicked image
+                modalImg.src = imgSrc; // Set the modal image source
+                modal.classList.add('active'); // Show the modal
             });
+        });
 
-            // Close the modal when the close button is clicked
-            closeModal.addEventListener('click', function () {
-                modal.classList.remove('active'); // Hide the modal
-            });
+        // Close the modal when the close button is clicked
+        closeModal.addEventListener('click', function () {
+            modal.classList.remove('active'); // Hide the modal
+        });
 
-            // Close the modal when clicking outside of the image
-            modal.addEventListener('click', function (e) {
-                if (e.target === modal) {
-                    modal.classList.remove('active'); // Hide the modal if clicked outside
-                }
-            });
-        </script>
-    </body>
+        // Close the modal when clicking outside of the image
+        modal.addEventListener('click', function (e) {
+            if (e.target === modal) {
+                modal.classList.remove('active'); // Hide the modal if clicked outside
+            }
+        });
+    </script>
+</body>
 
-    </html>
+</html>
